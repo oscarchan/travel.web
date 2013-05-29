@@ -1,0 +1,29 @@
+<%
+=begin
+  expected parameters:
+    - banner_item
+=end
+%>
+
+<!-- snapshot -->
+
+<div class="item <%= 'active' if banner_item_counter == 0 %>" >
+  <%= image_tag banner_item %>
+
+  <div class="carousel-caption">
+    <h3 class="offset1">Simple yet Personal,</h3>
+    <h3 class="offset2">How traveling should be</h3>
+    <br></br>
+    <div class="span4 offset4">
+      <form class="navbar-search" action="#">
+
+        <div>
+          <div class="icon-search" ></div>
+          <input class="input-large search-query align-center" type="text" placeholder="Destination" />
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</div>

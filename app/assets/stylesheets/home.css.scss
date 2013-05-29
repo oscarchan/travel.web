@@ -1,3 +1,42 @@
 // Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.center {
+  margin-left:auto;
+  margin-right:auto;
+  float: none;
+}
+
+.carousel-caption  {
+  background-color: transparent;
+  top: 30%;
+}
+
+.carousel-caption h3 {
+  color: white;
+  font: 40px "Gill Sans","Helvetica Neue","Helvetica",Arial,sans-serif;
+  background-color: transparent;
+  text-shadow: 1px 1px 10px black, 2px 3px 10px #222, -1px -1px 10px #333;
+  letter-spacing: 1px;
+}
+
+
+.snapshot-list {
+  padding-top: 20px;
+}
+
+body .modal {
+  width: 30%;
+  left: 35%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.navbar-search .icon-search {
+  position: absolute;
+  top: 7px;
+  right: 11px;
+  background-image: url("http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png");
+}
+
