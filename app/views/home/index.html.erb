@@ -15,5 +15,16 @@
     <%= render partial: 'banner_item', collection: @banner_images %>
   </div><!-- carousel-inner -->
 
-</div>
+  <!-- popular destinations -->
+  <div id="destination-list" class="container-fluid">
 
+    <% @popular_destinations.in_groups_of(3, false) do |destination_row| %>
+      <div class="row-fluid">
+        <ul class="thumbnails">
+          <%= render partial: 'destinations/destination', collection: destination_row %>
+        </ul>
+      </div><!-- end destination row -->
+    <% end %>
+  </div>
+
+</div>

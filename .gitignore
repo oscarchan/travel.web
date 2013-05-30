@@ -18,3 +18,5 @@
 /.yardoc
 bundler_stubs/
 *~
+*#
+.#*
