@@ -4,12 +4,9 @@
   <title>TravelWeb</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <!-- controller specific javascript/stylesheet -->
-  <%= include_controller_javascript %>
   <%= include_controller_stylesheet %>
 
-  <%= yield :javascript_includes %>
 <!--
   <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" media="screen" />
 -->
@@ -36,6 +33,13 @@
   <!-- footer -->
   <%= render 'layouts/footer' %>
 </div>
+
+<!-- application javascripts -->
+<%= javascript_include_tag "application" %>
+<!-- controller specific javascripts -->
+<%= include_controller_javascript %>
+<!-- view specific javascripts -->
+<%= yield :javascript_includes %>
 
 <%= debug params if Rails.env.development? %>
 
