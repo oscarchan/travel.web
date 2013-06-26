@@ -1,0 +1,22 @@
+// Place all the styles related to the categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#wish-list {
+  .sidebar-nav {
+    min-height: 640px;
+  }
+
+
+  a.thumbnail {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    div.caption {
+      p {
+        font-size: 70%
+      }
+    }
+  }
+}

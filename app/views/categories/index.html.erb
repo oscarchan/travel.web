@@ -1,0 +1,24 @@
+<div class="row-fluid">
+  <%= render 'wish_lists/wish_list' %>
+
+
+  <div id="category-list" class="span9">
+
+    <% @category_list.each do |category| %>
+      <div id="category-container" class="container-fluid">
+        <h4><%= category.code %></h4>
+
+        <% @attractions_by_category[category.code].in_groups_of(3, false) do |attraction_row| %>
+          <div class="row-fluid">
+            <ul id="attraction-container" class="thumbnails well">
+              <%= render partial: 'attractions/attraction', collection:  attraction_row %>
+            </ul>
+          </div>
+          <div>
+            <i class="icon-chevron-down"></i>
+          </div>
+        <% end # @attractions_by_category %>
+      </div>
+    <% end # @category_list %>
+  </div>
+</div>
